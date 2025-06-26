@@ -1,41 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Background circle -->
-  <circle cx="16" cy="16" r="15" fill="url(#grad1)" stroke="#1e40af" stroke-width="2"/>
+  <circle cx="16" cy="16" r="15" fill="url(#redGrad)" stroke="#b91c1c" stroke-width="2"/>
   
-  <!-- Main gear -->
+  <!-- Play button (main element) -->
   <g fill="#ffffff">
-    <!-- Gear teeth -->
-    <path d="M16 4 L18 6 L14 6 Z"/>
-    <path d="M28 16 L26 18 L26 14 Z"/>
-    <path d="M16 28 L14 26 L18 26 Z"/>
-    <path d="M4 16 L6 14 L6 18 Z"/>
-    <path d="M25.5 8.5 L24 10 L22.5 8.5 Z"/>
-    <path d="M23.5 25.5 L22 24 L23.5 22.5 Z"/>
-    <path d="M8.5 23.5 L10 22 L8.5 20.5 Z"/>
-    <path d="M6.5 8.5 L8 10 L6.5 11.5 Z"/>
-    
-    <!-- Main gear body -->
-    <circle cx="16" cy="16" r="8" fill="#ffffff"/>
-    <circle cx="16" cy="16" r="4" fill="url(#grad1)"/>
-    
-    <!-- Center hole -->
-    <circle cx="16" cy="16" r="1.5" fill="#ffffff"/>
+    <!-- Play button triangle -->
+    <path d="M11 9 L11 23 L22 16 Z" fill="url(#playGrad)" stroke="#ffffff" stroke-width="1"/>
+    <!-- Play button highlight -->
+    <path d="M13 12 L13 20 L19 16 Z" fill="#ffffff" opacity="0.9"/>
   </g>
   
-  <!-- Smaller automation symbols -->
-  <g fill="#ffffff" opacity="0.8">
-    <!-- Lightning bolt (automation speed) -->
-    <path d="M21 11 L19 13 L20 13 L18 16 L20 14 L19 14 L21 11 Z" fill="#fbbf24"/>
+  <!-- Gear (secondary element) -->
+  <g fill="#ffffff" opacity="0.85">
+    <!-- Small gear teeth -->
+    <path d="M25 7 L26 8 L24 8 Z"/>
+    <path d="M29 11 L28 12 L28 10 Z"/>
+    <path d="M25 15 L24 14 L26 14 Z"/>
+    <path d="M21 11 L22 10 L22 12 Z"/>
+    <path d="M27.5 9.5 L26.5 10.5 L26 9.5 Z"/>
+    <path d="M26.5 13.5 L26 12.5 L27 12.5 Z"/>
+    <path d="M23.5 13.5 L24 12.5 L23.5 11.5 Z"/>
+    <path d="M22.5 9.5 L23.5 10.5 L22.5 11 Z"/>
     
-    <!-- Binary dots (digital automation) -->
-    <circle cx="11" cy="11" r="0.8" fill="#10b981"/>
-    <circle cx="13" cy="9" r="0.6" fill="#10b981"/>
+    <!-- Small gear body -->
+    <circle cx="25" cy="11" r="3" fill="#ffffff"/>
+    <circle cx="25" cy="11" r="1.5" fill="url(#redGrad)"/>
+    
+    <!-- Center hole -->
+    <circle cx="25" cy="11" r="0.5" fill="#ffffff"/>
+  </g>
+  
+  <!-- Automation sparkles -->
+  <g fill="#ffffff" opacity="0.7">
+    <!-- Speed lines around play button -->
+    <path d="M7 13 L9 13" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M7 16 L10 16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M7 19 L9 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
   </g>
 </svg> 
