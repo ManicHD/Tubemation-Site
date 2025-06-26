@@ -29,8 +29,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-            <Zap size={24} className="text-white" />
+          <div className="w-10 h-10 flex items-center justify-center">
+            <img src="/automation-icon.svg" alt="Tubemation Logo" className="w-10 h-10" />
           </div>
           <span className={`font-bold text-xl transition-colors ${isScrolled ? 'text-navy-900' : isGetStartedPage ? 'text-white drop-shadow-lg' : 'text-navy-800'}`}>Tubemation</span>
         </Link>
