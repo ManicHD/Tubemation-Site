@@ -85,9 +85,7 @@ const Hero = () => {
               Growth
             </h1>
             
-            <p className="text-xl text-navy-600 mb-8">
-              100% Manually Automated, No AI!
-            </p>
+
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/get-started" className="btn btn-primary text-lg">
